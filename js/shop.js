@@ -49,7 +49,7 @@ window.Shop = {
     },
 
     displayProducts: function (products) {
-        var productsHtml = "";
+        let productsHtml = "";
 
         products.forEach(oneProduct => productsHtml += Shop.getProductsHtml(oneProduct));
         $(".single-product-area .row:first-child").html(productsHtml);
